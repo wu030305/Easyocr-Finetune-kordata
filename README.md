@@ -1,5 +1,5 @@
 # Easyocr-Finetune-kordata
-[Yujin의 Notion](https://kindhearted-whistle-34a.notion.site/ff27ed5416514711827b71158f90bb03?v=87981df5f82c42bdbcf92f3b82a53cd0)에 보다 자세한 설명이 기재되어 있음
+[Yujin의 Notion](https://kindhearted-whistle-34a.notion.site/OCR-with-2269e73ab0b542b6973b3926b7ef1240)에 보다 자세한 설명이 기재되어 있음
 ## 도입
 - OCR 시 한글 필기체의 인식률이 저조함을 문제삼아, 메인모델로 정한 Easyocr의 pre-trained 모델을 한글 필기체 데이터로 Fine-tune해 그 성능을 높이고자 한다.
 
