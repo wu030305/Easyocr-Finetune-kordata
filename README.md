@@ -1,7 +1,10 @@
 # Easyocr-Finetune-kordata
 [Yujin의 Notion](https://kindhearted-whistle-34a.notion.site/OCR-with-2269e73ab0b542b6973b3926b7ef1240)에 보다 자세한 설명이 기재되어 있음
 ## 도입
-- OCR 시 한글 필기체의 인식률이 저조함을 문제삼아, 메인모델로 정한 Easyocr의 pre-trained 모델을 한글 필기체 데이터로 Fine-tune해 그 성능을 높이고자 한다.
+- OCR 시 한글 필기체의 인식률이 저조함을 문제삼아, 메인모델로 정한 Easyocr의 pre-trained 모델을 한글 필기체 데이터로 Fine-tune해 그 성능을 높이고자 한다
+- 이미 네이버의 클로바 OCR 등 퍼포먼스가 뛰어난 OCR이 공개되어 있지만, 외부 API 사용 시 데이터도 같이 넘어가는 문제가 생김
+- 보안문제 때문에 오픈된 API를 사용할 수 없고, 오프라인에서 밖에 OCR을 할 수 없는 문제에 대한 해답을 줄 수 있음
+- 추후 앱개발까지 고려중임
 
 ## 프로젝트 진행순서
 ### 1. 학습 데이터
@@ -10,7 +13,7 @@
 
 ### 2. 학습 데이터 변환
 
-ai hub에서 다운받은 데이터 *혹은 TextRecognitionDataGenerator로 만든 데이터는* 학습을 위한 [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark) 프로젝트에서 요구하는 데이터 구조가 아니므로 바로 사용할 수 없음. So, 데이터 변환 필요
+ai hub에서 다운받은 데이터 (*혹은 TextRecognitionDataGenerator로 만든 데이터*)는 학습을 위한 [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark) 프로젝트에서 요구하는 데이터 구조가 아니므로 바로 사용할 수 없음. So, 데이터 변환 필요
 
 2-1. 'prepare_file_easyocr.ipynb' 파일을 이용해 AI hub의 데이터에서 ground truth 정보를 담은 txt파일 생성
 
