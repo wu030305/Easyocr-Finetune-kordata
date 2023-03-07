@@ -17,7 +17,7 @@ ai hub에서 다운받은 데이터 (*혹은 TextRecognitionDataGenerator로 만
 
 2-1. 'prepare_file_easyocr.ipynb' 파일을 이용해 AI hub의 데이터에서 ground truth 정보를 담은 txt파일 생성
 
-2-2. [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark) 프로젝트의 creat_lmdb_dataset.py에 image 데이터와 생성된 gt.txt 파일을 input으로 넣어 lmdb 파일 생성
+2-2. [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark) 프로젝트의 creat_lmdb_dataset.py에 image와 생성된 gt.txt 파일을 input으로 넣어 lmdb 파일 생성
 
 ### 3. 모델 학습
 
