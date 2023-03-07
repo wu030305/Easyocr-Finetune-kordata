@@ -25,3 +25,4 @@ ai hub에서 다운받은 데이터 (*혹은 TextRecognitionDataGenerator로 만
 
 ## 학습 결과
 기존 pre-trained model의 accuracy 55% 에서 Fine-tune한 custom model의 accuracy 92%로 성능 향상을 확인함
+성능 향상을 위한 이미지 전처리로 흑백변환, 블러처리, 모폴로지 연산 등을 조합해 실험하였고, 실험 결과 '화질 + gray + binary + avg_blur + delation'이 가장 좋은 퍼포먼스를 보임
